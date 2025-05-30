@@ -41,7 +41,7 @@ module.exports = (env, argv) => {
     devtool: isDev ? 'source-map' : false,
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html'
+        template: './index.html'
       }),
       new MiniCssExtractPlugin({
         filename: filename('css')
