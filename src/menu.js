@@ -1,10 +1,12 @@
 import {Menu} from './core/menu'
+import { BackgroundModule } from './modules/background.module'
 
 export class ContextMenu extends Menu {
 	constructor(selector) {
 		super(selector)
 		this.modules = [
-		  // тут будут импортированные модули
+			new BackgroundModule(),
+		  	// тут будут импортированные модули
 		]
 	  }
   
@@ -25,9 +27,9 @@ export class ContextMenu extends Menu {
 		this.modules.forEach(mod => this.el.appendChild(mod.render()))
 		this.el.style.left = `${x}px`
 		this.el.style.top = `${y}px`
+		this.el.style.display = 'block'
 		
 	  }
-	
 
 	close() {
 		this.el.style.display = 'none'
