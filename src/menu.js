@@ -1,11 +1,13 @@
 import {Menu} from './core/menu'
 import { BackgroundModule } from './modules/background.module'
+import { ShapeModule } from './modules/shape.module'
 
 export class ContextMenu extends Menu {
 	constructor(selector) {
 		super(selector)
 		this.modules = [
 			new BackgroundModule(),
+			new ShapeModule(),
 		  	// тут будут импортированные модули
 		]
 	  }
