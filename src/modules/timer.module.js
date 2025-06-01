@@ -37,7 +37,7 @@ export class TimerModule extends Module {
         //Info
         const timerInfo = document.createElement("div");
         timerInfo.className = "timer-info";
-        timerInfo.textContent = "* Для запуска таймера,\n введите минуты и нажмите ENTER";
+        timerInfo.textContent = "* Для запуска таймера,\n введите секунды и нажмите ENTER";
 
         timerContainer.append(timerLabel);
         timerContainer.append(timerInput);
