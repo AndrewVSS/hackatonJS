@@ -2,6 +2,7 @@ import {Menu} from './core/menu'
 import { BackgroundModule } from './modules/background.module'
 import { ShapeModule } from './modules/shape.module'
 import {TimerModule} from "./modules/timer.module";
+import { ClicksModule } from './modules/clicks.module'
 
 export class ContextMenu extends Menu {
 	constructor(selector) {
@@ -10,6 +11,7 @@ export class ContextMenu extends Menu {
 			new BackgroundModule(),
 			new ShapeModule(),
 			new TimerModule(),
+			new ClicksModule()
 		  	// тут будут импортированные модули
 		]
 	  }
