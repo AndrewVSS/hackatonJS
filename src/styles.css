@@ -40,3 +40,48 @@ body {
 .menu .menu-item:hover {
   background: #343434;
 }
+
+.timer-container {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  width: 380px;
+}
+
+.timer-label {
+  display: block;
+  padding: 10px 10px;
+}
+
+.timer-input {
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  padding: 5px 10px;
+  width: 120px;
+}
+
+.timer-info {
+  font-size: 12px;
+  padding: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
